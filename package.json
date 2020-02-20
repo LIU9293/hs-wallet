@@ -1,0 +1,20 @@
+{
+  "name": "handshake-js",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chris Liu (liukai9293@qq.com)",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypto": "^5.0.3",
+    "bip39": "^3.0.2",
+    "bsert": "^0.0.10",
+    "buffer-map": "^0.0.7",
+    "bufio": "^1.0.6",
+    "hdkey": "^1.1.1",
+    "n64": "^0.2.10"
+  }
+}
