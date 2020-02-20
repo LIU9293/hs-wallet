@@ -7,7 +7,7 @@
 * Get address with a mnemonic
 
 ``` javascript
-const handshake = require('handshake-js')
+const handshake = require('hs-wallet')
 const mnemonic = '*** *** ***'
 
 const wallet = handshake.fromMnemonic(mnemonic)
