@@ -1,4 +1,4 @@
-# Handshake-js
+# hs-wallet
 
 > This library is like a subset of hsd which generate raw handshake transactions
 
@@ -23,7 +23,13 @@ const utxo = {
   value: 1 * 1e6
 }
 
-const transaction = wallet.send([utxo], toAddress, amount /* 0.5 * 1e6 */, fee /* 0.01 * 1e6 */)
+const transaction = wallet.send(
+  [utxo],
+  toAddress,
+  amount, // in satoshis
+  fee // satoshis
+)
+
 const { txid, hex } = transaction
 // then call rpc - sendrawtransaction with hex
 ```
@@ -39,11 +45,11 @@ const utxo = {
 
 const transaction = wallet.bidName(
   'wltx',       // name want to bid
-  0.1 * 1e6,    // value
-  0.1 * 1e6,    // lock value, must >= value
+  0.1 * 1e6,    // value, in satoshis
+  0.1 * 1e6,    // lock value, must >= value, in satoshis
   2842,         // current block height
   [utxo],       // utxo set
-  0.05 * 1e6,    // transaction fee
+  0.05 * 1e6,    // transaction fee, in satoshis
 )
 
 const { txid, hex } = transaction

@@ -1,2 +1,4 @@
 node_modules
 test.js
+.DS_Store
+yarn-error.log
