@@ -1,6 +1,6 @@
 {
   "name": "hs-wallet",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "wallet client for handshake blockchain",
   "main": "src/index.js",
   "scripts": {

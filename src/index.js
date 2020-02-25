@@ -182,7 +182,8 @@ class HandshakeJS {
 
 
 HandshakeJS.hashStringToAddress = function (str) {
-  return Address.fromHash(Buffer.from(str, 'hex'))
+  const Addr = Address.fromHash(Buffer.from(str, 'hex'))
+  return Addr.toString()
 }
 
 HandshakeJS.Tx = Tx
