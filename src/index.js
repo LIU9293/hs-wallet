@@ -180,4 +180,12 @@ class HandshakeJS {
   }
 }
 
+
+HandshakeJS.hashStringToAddress = function (str) {
+  return Address.fromHash(Buffer.from(str, 'hex'))
+}
+
+HandshakeJS.Tx = Tx
+HandshakeJS.Address = Address
+
 module.exports = HandshakeJS
