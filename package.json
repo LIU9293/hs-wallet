@@ -1,6 +1,6 @@
 {
   "name": "hs-wallet",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "wallet client for handshake blockchain",
   "main": "src/index.js",
   "scripts": {
@@ -10,7 +10,9 @@
   "license": "MIT",
   "dependencies": {
     "bcrypto": "^5.0.3",
+    "binet": "^0.3.5",
     "bip39": "^3.0.2",
+    "bns": "^0.10.3",
     "bsert": "^0.0.10",
     "buffer-map": "^0.0.7",
     "bufio": "^1.0.6",

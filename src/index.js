@@ -11,6 +11,8 @@ const Input = require('./primitives/input')
 const Script = require('./script/script')
 const Witness = require('./script/witness')
 const Address = require('./primitives/address')
+const Covenant = require('./primitives/covenant')
+const Resource = require('./dns/resource')
 const { verifyString, types, createBlind } = require('./rule')
 
 class HandshakeJS {
@@ -188,5 +190,7 @@ HandshakeJS.hashStringToAddress = function (str) {
 
 HandshakeJS.Tx = Tx
 HandshakeJS.Address = Address
+HandshakeJS.Covenant = Covenant
+HandshakeJS.Resource = Resource
 
 module.exports = HandshakeJS
